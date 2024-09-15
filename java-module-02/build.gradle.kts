@@ -14,6 +14,6 @@ tasks.register("someTask") {
         val duration: Long = inputs.properties["duration"] as Long
         logger.lifecycle("$path start - $largeObject")
         Thread.sleep(duration)
-        logger.lifecycle("$path end - $largeObject")
+        logger.lifecycle("$path end   - $largeObject")
     }
 }
