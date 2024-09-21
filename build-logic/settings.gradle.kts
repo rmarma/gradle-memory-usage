@@ -1,11 +1,10 @@
-rootProject.name = "gradle-memory-usage"
+rootProject.name = "build-logic"
 
 pluginManagement {
     repositories {
         mavenCentral()
         gradlePluginPortal()
     }
-    includeBuild("build-logic")
 }
 
 dependencyResolutionManagement {
@@ -14,9 +13,3 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-
-include(
-    ":java-module-01",
-    ":java-module-02",
-    ":java-module-03",
-)
